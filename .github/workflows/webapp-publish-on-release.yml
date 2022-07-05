@@ -26,4 +26,4 @@ jobs:
           docker tag olakitanakinya/webapp \
           registry.digitalocean.com/my-sample-registry/my-sample-page:${{github.event.inputs.version }}
       - name: Push image to DO Container Registry
-        run: docker push registry.digitalocean.com/my-sample-registry/my-sample-page:${{ github.event.inputs.version }}
+        run: docker push registry.digitalocean.com/my-sample-registry:${{ github.event.inputs.version }}
