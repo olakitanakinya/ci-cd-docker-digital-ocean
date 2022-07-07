@@ -22,6 +22,6 @@ jobs:
       - name: Log in to DO Container Registry
         run: doctl registry login --expiry-seconds 600
       - name: Tag image
-        run: docker tag olakitanakinya/ci-cd-docker-digital-ocean registry.digitalocean.com/my-sample-registry/olakitanakinya/ci-cd-docker-digital-ocean:${{ github.event.inputs.version }}}
+        run: docker tag c73a90225e88 registry.digitalocean.com/my-sample-registry/c73a90225e88:${{ github.event.inputs.version }}
       - name: Push image to DO Container Registry
-        run: docker push registry.digitalocean.com/my-sample-registry/olakitanakinya/ci-cd-docker-digital-ocean:${{ github.event.inputs.version }}
+        run: docker push registry.digitalocean.com/my-sample-registry/c73a90225e88:${{ github.event.inputs.version }}
